@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>تخصيص الدفتر - أنا أتعلم أركان الإسلام</title>
+  <meta name="description" content="دفاتر تلوين رقمية تعليمية إسلامية مخصصة للأطفال بأسمائهم، بالعربية والإنجليزية." />
+  <meta name="robots" content="noindex" />
+  <link rel="canonical" href="https://momin.world/mw/islamic-pillars/personalize/" />
+
+  <link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/assets/brand/favicon.svg" />
+  <link rel="mask-icon" href="/assets/brand/favicon.svg" color="#05a3ff" />
+  <meta property="og:site_name" content="عالم مؤمن" />
+  <meta property="og:title" content="تخصيص الدفتر - أنا أتعلم أركان الإسلام" />
+
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body data-lang="ar" data-page="personalize" data-title-ar="تخصيص الدفتر - أنا أتعلم أركان الإسلام" data-title-en="Customize Workbook - I Am Learning The Five Pillars Of Islam">
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="nav-wrap">
+    <nav class="nav glass" aria-label="Primary">
+      <a class="nav-logo" href="/index.html" aria-label="Momin — home">
+        <img src="/assets/brand/momin-logo.svg" alt="عالم مؤمن" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="/index.html#home" data-i18n="nav.home">الرئيسية</a></li>
+        <li><a href="/product.html" data-i18n="nav.publications">إصداراتنا</a></li>
+        <li><a href="/index.html#why-choose" data-i18n="nav.why">لماذا عالم مؤمن</a></li>
+        <li><a href="/index.html#support" data-i18n="nav.support">ادعم عالم مؤمن</a></li>
+        <li><a href="/index.html#footer" data-i18n="nav.contact">تواصل معنا</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="lang-switch" role="group" data-i18n-aria="nav.langLabel" aria-label="اللغة">
+          <button type="button" class="lang-btn is-active" data-lang-set="ar" aria-pressed="true">ع</button>
+          <button type="button" class="lang-btn" data-lang-set="en" aria-pressed="false">EN</button>
+        </div>
+        <button type="button" class="hamburger" id="hamburger" aria-expanded="false" data-i18n-aria="nav.menu" aria-label="افتح القائمة">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <div class="glass mobile-panel">
+        <ul>
+          <li><a href="/index.html#home" data-i18n="nav.home">الرئيسية</a></li>
+          <li><a href="/product.html" data-i18n="nav.publications">إصداراتنا</a></li>
+          <li><a href="/index.html#why-choose" data-i18n="nav.why">لماذا عالم مؤمن</a></li>
+          <li><a href="/index.html#support" data-i18n="nav.support">ادعم عالم مؤمن</a></li>
+          <li><a href="/index.html#footer" data-i18n="nav.contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="personalize-main">
+    <div class="container">
+      <div class="p-intro reveal in">
+        <span class="free-pill">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4 10-11" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-i18n="form.freePill">متاح مجانًا</span>
+        </span>
+        <h1 data-i18n="form.title">أنا أتعلم أركان الإسلام</h1>
+        <p class="p-subtitle" data-i18n="form.subtitle">خصص دفتر طفلك</p>
+        <p class="p-lead" data-i18n="form.description">أخبرنا قليلاً عن طفلك، وسنُنشئ له دفترًا مخصصًا باسمه ليكون تجربة تعليمية ممتعة ومميزة.</p>
+      </div>
+
+      <div class="personalize-layout">
+        <!-- FORM -->
+        <form class="p-form glass-card" id="pForm" novalidate>
+          <fieldset class="field">
+            <legend data-i18n="form.gender">لمن هذا الدفتر؟</legend>
+            <div class="gender-toggle" role="radiogroup">
+              <label class="gender-opt is-active">
+                <input type="radio" name="gender" value="boy" checked />
+                <span data-i18n="form.boy">ذكر</span>
+              </label>
+              <label class="gender-opt">
+                <input type="radio" name="gender" value="girl" />
+                <span data-i18n="form.girl">أنثى</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="firstName" id="firstNameLabel">الاسم الأول للطفل</label>
+            <input type="text" id="firstName" autocomplete="off" placeholder="مثال: عبدالرحمن" />
+            <small data-i18n="form.firstNameHint">يظهر في كامل الدفتر.</small>
+          </div>
+
+          <div class="field">
+            <label for="fullName" id="fullNameLabel">الاسم الأخير للطفل</label>
+            <input type="text" id="fullName" autocomplete="off" placeholder="مثال: أحمد" />
+            <small data-i18n="form.fullNameNote">الاسم الثلاثي للطفل أو الطفلة لغاية وضعه بشهادة التقدير في آخر دفتره الخاص مقدمة من فريق عالم مؤمن.</small>
+          </div>
+
+          <div class="field">
+            <label for="email" id="emailLabel" data-i18n="form.email">البريد الإلكتروني</label>
+            <input type="email" id="email" autocomplete="email" required placeholder="example@email.com" />
+          </div>
+
+          <!-- Optional special message (collapsed by default) -->
+          <div class="msg-section">
+            <button type="button" class="msg-toggle" id="msgToggle" aria-expanded="false" aria-controls="msgBody">
+              <span data-i18n="msg.title">رسالة تذكارية للطفل (اختياري)</span>
+              <span class="msg-plus" aria-hidden="true"></span>
+            </button>
+            <div class="msg-body" id="msgBody">
+              <p class="msg-help" data-i18n="msg.help">إذا رغبت بإضافة رسالة تذكارية خاصة لطفلك أو طالبك داخل الدفتر، افتح هذا القسم وأكمل البيانات التالية.</p>
+              <div class="field">
+                <label for="msgSender" data-i18n="msg.senderType">نوع المرسل</label>
+                <select id="msgSender">
+                  <option value="" data-i18n="msg.choose">اختر...</option>
+                  <option value="father" data-i18n="msg.father">والد</option>
+                  <option value="mother" data-i18n="msg.mother">والدة</option>
+                  <option value="brother" data-i18n="msg.brother">أخ</option>
+                  <option value="sister" data-i18n="msg.sister">أخت</option>
+                  <option value="teacherM" data-i18n="msg.teacherM">معلم</option>
+                  <option value="teacherF" data-i18n="msg.teacherF">معلمة</option>
+                  <option value="grandfather" data-i18n="msg.grandfather">جد</option>
+                  <option value="grandmother" data-i18n="msg.grandmother">جدة</option>
+                  <option value="uncleP" data-i18n="msg.uncleP">عم</option>
+                  <option value="auntP" data-i18n="msg.auntP">عمة</option>
+                  <option value="uncleM" data-i18n="msg.uncleM">خال</option>
+                  <option value="auntM" data-i18n="msg.auntM">خالة</option>
+                  <option value="other" data-i18n="msg.other">شخص آخر</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="msgName" data-i18n="msg.senderName">اسم المرسل</label>
+                <input type="text" id="msgName" autocomplete="off" />
+              </div>
+              <div class="field">
+                <label for="msgDate" data-i18n="msg.date">تاريخ الرسالة</label>
+                <input type="date" id="msgDate" />
+              </div>
+              <div class="field">
+                <label for="msgText" data-i18n="msg.message">اكتب رسالتك</label>
+                <textarea id="msgText" maxlength="100" rows="3"></textarea>
+                <small class="msg-counter" id="msgCounter">0 / 100</small>
+              </div>
+            </div>
+          </div>
+
+          <fieldset class="field gender-field">
+            <legend data-i18n="form.language">لغة الدفتر</legend>
+            <div class="gender-toggle">
+              <label class="gender-opt">
+                <input type="radio" name="bookLang" value="ar" checked />
+                <span data-i18n="form.langAr">العربية</span>
+              </label>
+              <label class="gender-opt">
+                <input type="radio" name="bookLang" value="en" />
+                <span data-i18n="form.langEn">English</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <button type="button" class="btn btn-blue block" id="downloadBtn" data-i18n="form.download">حمّل دفتر طفلك</button>
+          <p class="gen-status" id="genStatus" aria-live="polite"></p>
+
+          <ul class="form-features">
+            <li>
+              <svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4 10-11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="form.feat1">قابل للتلوين الرقمي</span>
+            </li>
+            <li>
+              <svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4 10-11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="form.feat2">قابل للطباعة</span>
+            </li>
+            <li>
+              <svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4 10-11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="form.feat3">يحتوي على شهادة تقدير رقمية</span>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Post-download success overlay -->
+  <div class="done-overlay" id="doneOverlay" role="dialog" aria-modal="true" aria-labelledby="doneTitle" hidden>
+    <div class="done-card glass-card">
+      <div class="done-badge">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4 10-11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h2 id="doneTitle" data-i18n="form.doneTitle">تم إعداد دفترك بنجاح</h2>
+      <p id="doneMsg" data-i18n="form.doneMsg">شكراً لك. تم إنشاء الدفتر وتحميله بنجاح على جهازك. نأمل أن يستمتع طفلك بهذه التجربة التعليمية المخصصة.</p>
+      <p class="done-count" id="doneCount" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <!-- PDF library (CDN, no build step). Used only on this page. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+  <script src="/script.js"></script>
+  <script src="/assets/js/personalize.js" defer></script>
+</body>
+</html>
